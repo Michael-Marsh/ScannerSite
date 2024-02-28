@@ -1,0 +1,148 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet xmlns="http://tempuri.org/Errors.xsd">
+  <Errors>
+    <error />
+    <date />
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTable() in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 87
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 27
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 183</error>
+    <date>7/18/2014 2:30 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTable() in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 87
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 27
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 183</error>
+    <date>7/18/2014 2:30 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTable() in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 87
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 27
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 183</error>
+    <date>7/18/2014 2:31 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTable() in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 87
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 27
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 183</error>
+    <date>7/18/2014 2:31 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTable() in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 87
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 27
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 183</error>
+    <date>7/18/2014 2:33 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTable() in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 87
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 27
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 183</error>
+    <date>7/18/2014 2:34 PM</date>
+  </Errors>
+  <Errors>
+    <error>IBMU2.UODOTNET.UniFileException: [IBM U2][UODOTNET - UNICLIENT][ErrorCode=30001] This Record was not found
+   at IBMU2.UODOTNET.UniFile.Read()
+   at IBMU2.UODOTNET.UniFile.Read(String aRecordID)
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in C:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 161</error>
+    <date>7/31/2014 9:10 AM</date>
+  </Errors>
+  <Errors>
+    <error>Connection Failed: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.122:31438</error>
+    <date>11/6/2015 2:44 PM</date>
+  </Errors>
+  <Errors>
+    <error>Connection Failed: [IBM U2][UODOTNET - UNICLIENT][ErrorCode=39129] The account name supplied is not a valid account</error>
+    <date>11/6/2015 2:47 PM</date>
+  </Errors>
+  <Errors>
+    <error>Connection Failed: [IBM U2][UODOTNET - UNICLIENT][ErrorCode=39129] The account name supplied is not a valid account</error>
+    <date>11/6/2015 2:49 PM</date>
+  </Errors>
+  <Errors>
+    <error>Connection Failed: [IBM U2][UODOTNET - UNICLIENT][ErrorCode=80011] The user name provided is incorrect</error>
+    <date>11/6/2015 2:51 PM</date>
+  </Errors>
+  <Errors>
+    <error>Connection Failed: [IBM U2][UODOTNET - UNICLIENT][ErrorCode=80011] The user name provided is incorrect</error>
+    <date>11/6/2015 2:51 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTableForLots(UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 172
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart, UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 60
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 179</error>
+    <date>11/6/2015 2:53 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTableForLots(UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 172
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart, UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 60
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 179</error>
+    <date>11/6/2015 2:56 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTableForLots(UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 172
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart, UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 60
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 179</error>
+    <date>11/6/2015 2:57 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTableForLots(UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 172
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart, UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 60
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 179</error>
+    <date>11/6/2015 2:58 PM</date>
+  </Errors>
+  <Errors>
+    <error>System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at wccoBarcodeBL.partInfo.buildLocationTableForLots(UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 172
+   at wccoBarcodeBL.partInfo..ctor(UniDynArray iplPart, UniDynArray imPart, UniDataSet lots) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\partInfo.cs:line 60
+   at wccoBarcodeBL.BarcodeSystem.getPart(String partNbr) in c:\FssApps\WebApps\WccoBarcode\WccoBarcodeBL\BarcodeSystem.cs:line 179</error>
+    <date>11/6/2015 2:59 PM</date>
+  </Errors>
+  <Errors>
+    <error>Connection Failed: [IBM U2][UODOTNET - UNICLIENT][ErrorCode=80011] The user name provided is incorrect</error>
+    <date>2/18/2024 10:48 PM</date>
+  </Errors>
+</NewDataSet>

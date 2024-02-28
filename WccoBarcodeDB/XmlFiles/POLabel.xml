@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE labels SYSTEM "label.dtd">
+<labels _FORMAT="E:PO LABEL.ZPL" _QUANTITY="1" _PRINTERNAME="Printer 1" _JOBNAME="LBL101">
+	<label>
+		<variable name="partNum">123456789012345</variable>
+		<variable name="desc">asdfasdfasdfasdfasdfasdfa</variable>
+		<variable name="poLine">1234567890</variable>
+		<variable name="date">dd/mm/yy</variable>
+		<variable name="lotNum">12345678901234567890</variable>
+		<variable name="quant">1234567890</variable>
+	</label>
+</labels>

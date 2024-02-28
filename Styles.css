@@ -1,0 +1,258 @@
+﻿/* Fellows Software Solutions Main Stylesheet */
+/* Copyright 2011 Fellows Software Solutions, Do not duplicate */
+body
+{
+	background-color: #000; margin: 0px; border: 0px; padding: 0px;
+}
+
+/* ++++++++++ global structures header start ++++++++++*/	
+#fs-header-center {
+	text-align:center;
+	width: 100%;
+	}
+	
+#fs-header 
+{
+	position: relative;
+	left:0px;
+	top:0px;
+	width: 300px; 
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left;	
+	border: 0px; 
+	}
+.global_navigation_bar_a {
+	FONT-STYLE: normal; FONT-FAMILY: Helvetica, sans-serif; 
+	COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+/* ++++++++++ global structures header end ++++++++++*/
+/* ++++++++++ topnav styles start ++++++++++*/
+.topnav{
+	text-align: center;
+	FONT-STYLE: normal; FONT-FAMILY: Helvetica, sans-serif; 
+	COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none	
+}
+
+.topnav a {
+	font-weight: normal;
+	text-decoration: none;
+	display: block;
+	margin: 0px;
+	border: 0px;	
+}
+.topnav a:link, .topnav a:visited {	
+	display: block;
+	margin: 0;
+	width: 59px;
+	line-height: 15px;
+	text-decoration: none;
+	FONT-STYLE: normal; FONT-FAMILY: Helvetica, sans-serif; 
+	COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none	
+	}	
+.topnav a:hover	{	
+	background: #e5b344;
+	color: #000;
+	text-decoration: none;
+	}
+.topnav a:active	{	
+	background: #e5b344;
+	color: #000;	
+	}
+
+/* dropdown navigation */
+.topNavRO {position:absolute; left:0px; top:0px;display:none; z-index:9; visibility:hidden; width:74px;}
+
+ul.topnavLink 	
+{
+	background: #e5b344;
+	padding: 5px 0 5px 0;
+	border: 0; margin:0;
+	list-style-type: none;
+	font: 12px verdana, arial, sans-serif;
+	font-weight:500;
+	color: black; 
+	text-align: left;
+	width:74px;
+	display:block;
+	}
+	
+ul.topnavLink LI{
+	background: #ccc;
+	margin: 0 5px 0 5px;
+	padding: 0;
+	border-bottom: solid 5px #f0f0f0; 
+	list-style-type: none;
+	display: block;
+	}
+
+a.topnavLink {
+	padding: 0;
+	display: block;	
+	text-decoration: none;
+	}
+a.topnavLink:link {	
+	color: black; 
+	margin: 0;
+	padding: 5px 5px 5px 5px;
+	display: block;
+	text-decoration: none;
+	}	
+a.topnavLink:visited {	
+	color: black; 
+	margin: 0;
+	padding: 5px 0 5px 5px;	
+	display: block;
+	text-decoration: none;
+	}	
+a.topnavLink:hover
+{
+	color: #000;
+	background: #d6dfe8; 
+	margin: 0;
+	display: block;
+	text-decoration: none;
+}
+a.topnavLink:active		
+{
+	color: #000;
+	background: #a0a0a0; 
+	display: block;
+	text-decoration: none;
+}
+/* ++++++++++ topnav styles end ++++++++++*/
+/* ++++++++++ global structures body start ++++++++++*/
+#fs-body-center 
+{
+	position: relative;
+	left:0px;
+	top:2px;
+	text-align:center;
+	width: 100%;
+	BACKGROUND-IMAGE: url(images/tile-texture.jpg); BACKGROUND-COLOR: #ffffff; BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: 50% top;
+	margin:0; padding:0px; border:0px;
+	}	
+#fs-body 
+{
+	position: relative;
+	left:0px;
+	top:0px;
+	z-index:1;
+	background-color: #fff;
+	border: 0px; 
+	padding: 0px;
+	margin: 0px;
+	width: 300px; 
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left;	
+	}	
+/* ++++++++++ global structures body end ++++++++++*/
+/* footer */
+#fs-footer-center 
+{
+	position: relative;
+	text-align:center;
+	left:0px;
+	top:0px;
+	width: 100%;
+	}	
+#fs-footer 
+{
+	position: relative;
+	left:0px;
+	top:2px;
+	width: 300px; 
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px; 	
+	text-align:left;
+	}		
+.imgsw {
+	display: inline;
+    margin: 5px 0 5px 10px;
+    border-top: 2px #000 solid; 
+    border-left: 2px #000 solid; 
+    border-bottom: 2px #000 solid; 
+    border-right: 1px #000 solid; 	
+}	
+.heading
+{
+	FONT-FAMILY: Helvetica, sans-serif; 
+	padding: 5px;
+	font-size: 14px;
+	word-spacing: normal;
+	text-transform: none;
+	font-style: normal;
+	letter-spacing: normal;
+	text-decoration: none;
+	font-weight: bold;
+}
+H1, H2, H3, H4, H5, TH, THEAD, TFOOT
+{
+    COLOR: #000;
+    FONT-STYLE: normal; FONT-FAMILY: Helvetica, sans-serif; 
+	FONT-WEIGHT: normal; TEXT-DECORATION: none	
+}
+P { line-height: 1.5;}
+
+H1 {
+	font-size: 14px;
+	word-spacing: normal;
+	text-transform: none;
+	font-style: normal;
+	letter-spacing: normal;
+	text-decoration: none;
+	font-weight: bold;
+}
+		
+H2	{	
+	/*font-size:	1.25em; */
+	font-size: 14px;
+	font-style:	normal;
+	FONT-WEIGHT: normal; 
+	text-decoration: none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	color: #e5b344;
+	}	
+		
+H3	{	
+	font-size: 14px;
+	font-weight:	500;
+	font-style:	normal;
+	color:#e5b344;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H4	{	
+	font-size: 12px;
+	font-weight:	500;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+
+A:link	{	
+	text-decoration:	none;
+	color:	#3333cc;
+	border:0px; margin:0px; padding:0px;
+	}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+A:hover	{	
+	text-decoration:	underline;
+	color:	#3333cc;
+	}
+A:active	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	

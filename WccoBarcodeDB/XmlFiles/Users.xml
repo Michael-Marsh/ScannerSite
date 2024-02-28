@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<dsUsers xmlns="http://tempuri.org/Users.xsd">
+  <Users>
+    <name>fellowsj</name>
+    <password>8C2DFA8F32FB0EE305AE7C0EE34CEE1F64808417</password>
+    <firstname>John</firstname>
+    <lastname>Fellows</lastname>
+    <email>fellowsjm@msn.com</email>
+    <employeeid>johnf</employeeid>
+    <printer>192.168.2.120</printer>
+    <account>E:/roi/WCCO.TRAIN</account>
+  </Users>
+  <Users>
+    <name>erick</name>
+    <password>76AE5B1AFEBFF0C61629ACC4B4D1EB1D7F649B08</password>
+    <firstname>Erick</firstname>
+    <lastname>Erickson</lastname>
+    <email />
+    <employeeid />
+    <printer />
+    <account>D:/roi/WCCO.TRAIN</account>
+  </Users>
+</dsUsers>

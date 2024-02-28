@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWorkOrders" targetNamespace="http://tempuri.org/WorkOrders.xsd" xmlns:mstns="http://tempuri.org/WorkOrders.xsd" xmlns="http://tempuri.org/WorkOrders.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWorkOrders" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWorkOrders" msprop:Generator_DataSetName="dsWorkOrders" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WorkOrders" msprop:Generator_UserTableName="WorkOrders" msprop:Generator_RowDeletedName="WorkOrdersRowDeleted" msprop:Generator_RowChangedName="WorkOrdersRowChanged" msprop:Generator_RowClassName="WorkOrdersRow" msprop:Generator_RowChangingName="WorkOrdersRowChanging" msprop:Generator_RowEvArgName="WorkOrdersRowChangeEvent" msprop:Generator_RowEvHandlerName="WorkOrdersRowChangeEventHandler" msprop:Generator_TableClassName="WorkOrdersDataTable" msprop:Generator_TableVarName="tableWorkOrders" msprop:Generator_RowDeletingName="WorkOrdersRowDeleting" msprop:Generator_TablePropName="_WorkOrders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WoNbr" msprop:Generator_UserColumnName="WoNbr" msprop:Generator_ColumnPropNameInRow="WoNbr" msprop:Generator_ColumnVarNameInTable="columnWoNbr" msprop:Generator_ColumnPropNameInTable="WoNbrColumn" type="xs:string" />
+              <xs:element name="PartNbr" msprop:Generator_UserColumnName="PartNbr" msprop:Generator_ColumnPropNameInRow="PartNbr" msprop:Generator_ColumnVarNameInTable="columnPartNbr" msprop:Generator_ColumnPropNameInTable="PartNbrColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BalQty" msprop:Generator_UserColumnName="BalQty" msprop:Generator_ColumnPropNameInRow="BalQty" msprop:Generator_ColumnVarNameInTable="columnBalQty" msprop:Generator_ColumnPropNameInTable="BalQtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DueDate" msprop:Generator_UserColumnName="DueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PriCode" msprop:Generator_UserColumnName="PriCode" msprop:Generator_ColumnVarNameInTable="columnPriCode" msprop:Generator_ColumnPropNameInRow="PriCode" msprop:Generator_ColumnPropNameInTable="PriCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Picklist" msprop:Generator_UserTableName="Picklist" msprop:Generator_RowDeletedName="PicklistRowDeleted" msprop:Generator_RowChangedName="PicklistRowChanged" msprop:Generator_RowClassName="PicklistRow" msprop:Generator_RowChangingName="PicklistRowChanging" msprop:Generator_RowEvArgName="PicklistRowChangeEvent" msprop:Generator_RowEvHandlerName="PicklistRowChangeEventHandler" msprop:Generator_TableClassName="PicklistDataTable" msprop:Generator_TableVarName="tablePicklist" msprop:Generator_RowDeletingName="PicklistRowDeleting" msprop:Generator_TablePropName="Picklist" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <msdata:Relationship name="WorkOrders_Picklist" msdata:parent="WorkOrders" msdata:child="Picklist" msdata:parentkey="PartNbr" msdata:childkey="Component" msprop:Generator_UserRelationName="WorkOrders_Picklist" msprop:Generator_RelationVarName="relationWorkOrders_Picklist" msprop:Generator_UserChildTable="Picklist" msprop:Generator_UserParentTable="WorkOrders" msprop:Generator_ParentPropName="WorkOrdersRow" msprop:Generator_ChildPropName="GetPicklistRows" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Component" msprop:Generator_UserColumnName="Component" msprop:Generator_ColumnPropNameInRow="Component" msprop:Generator_ColumnVarNameInTable="columnComponent" msprop:Generator_ColumnPropNameInTable="ComponentColumn" type="xs:string" />
+                    <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="QtyPerAssy" msprop:Generator_UserColumnName="QtyPerAssy" msprop:Generator_ColumnPropNameInRow="QtyPerAssy" msprop:Generator_ColumnVarNameInTable="columnQtyPerAssy" msprop:Generator_ColumnPropNameInTable="QtyPerAssyColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="ReqQty" msprop:Generator_UserColumnName="ReqQty" msprop:Generator_ColumnPropNameInRow="ReqQty" msprop:Generator_ColumnVarNameInTable="columnReqQty" msprop:Generator_ColumnPropNameInTable="ReqQtyColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="ViewPrint" msprop:Generator_UserColumnName="ViewPrint" msprop:Generator_ColumnPropNameInRow="ViewPrint" msprop:Generator_ColumnVarNameInTable="columnViewPrint" msprop:Generator_ColumnPropNameInTable="ViewPrintColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="Drawing" msprop:Generator_UserColumnName="Drawing" msprop:Generator_ColumnPropNameInRow="Drawing" msprop:Generator_ColumnVarNameInTable="columnDrawing" msprop:Generator_ColumnPropNameInTable="DrawingColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="OnHand" msprop:Generator_UserColumnName="OnHand" msprop:Generator_ColumnPropNameInRow="OnHand" msprop:Generator_ColumnVarNameInTable="columnOnHand" msprop:Generator_ColumnPropNameInTable="OnHandColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="UseSlatSheet" msprop:Generator_UserColumnName="UseSlatSheet" msprop:Generator_ColumnPropNameInRow="UseSlatSheet" msprop:Generator_ColumnVarNameInTable="columnUseSlatSheet" msprop:Generator_ColumnPropNameInTable="UseSlatSheetColumn" type="xs:boolean" minOccurs="0" />
+                    <xs:element name="TrimSetupExists" msprop:Generator_UserColumnName="TrimSetupExists" msprop:Generator_ColumnPropNameInRow="TrimSetupExists" msprop:Generator_ColumnVarNameInTable="columnTrimSetupExists" msprop:Generator_ColumnPropNameInTable="TrimSetupExistsColumn" type="xs:boolean" minOccurs="0" />
+                    <xs:element name="SlatParts" msprop:Generator_UserColumnName="SlatParts" msprop:Generator_ColumnPropNameInRow="SlatParts" msprop:Generator_ColumnVarNameInTable="columnSlatParts" msprop:Generator_ColumnPropNameInTable="SlatPartsColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="Inventory" msprop:Generator_UserTableName="Inventory" msprop:Generator_RowDeletedName="InventoryRowDeleted" msprop:Generator_RowChangedName="InventoryRowChanged" msprop:Generator_RowClassName="InventoryRow" msprop:Generator_RowChangingName="InventoryRowChanging" msprop:Generator_RowEvArgName="InventoryRowChangeEvent" msprop:Generator_RowEvHandlerName="InventoryRowChangeEventHandler" msprop:Generator_TableClassName="InventoryDataTable" msprop:Generator_TableVarName="tableInventory" msprop:Generator_RowDeletingName="InventoryRowDeleting" msprop:Generator_TablePropName="Inventory" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:appinfo>
+                          <msdata:Relationship name="Picklist_Inventory" msdata:parent="Picklist" msdata:child="Inventory" msdata:parentkey="Component" msdata:childkey="Component" msprop:Generator_UserRelationName="Picklist_Inventory" msprop:Generator_RelationVarName="relationPicklist_Inventory" msprop:Generator_UserChildTable="Inventory" msprop:Generator_UserParentTable="Picklist" msprop:Generator_ParentPropName="PicklistRow" msprop:Generator_ChildPropName="GetInventoryRows" />
+                        </xs:appinfo>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Component" msprop:Generator_UserColumnName="Component" msprop:Generator_ColumnPropNameInRow="Component" msprop:Generator_ColumnVarNameInTable="columnComponent" msprop:Generator_ColumnPropNameInTable="ComponentColumn" type="xs:string" />
+                          <xs:element name="Lots" msprop:Generator_UserColumnName="Lots" msprop:Generator_ColumnPropNameInRow="Lots" msprop:Generator_ColumnVarNameInTable="columnLots" msprop:Generator_ColumnPropNameInTable="LotsColumn" type="xs:string" minOccurs="0" />
+                          <xs:element name="LotsOnHand" msprop:Generator_UserColumnName="LotsOnHand" msprop:Generator_ColumnPropNameInRow="LotsOnHand" msprop:Generator_ColumnVarNameInTable="columnLotsOnHand" msprop:Generator_ColumnPropNameInTable="LotsOnHandColumn" type="xs:int" minOccurs="0" />
+                          <xs:element name="LotsLoc" msprop:Generator_UserColumnName="LotsLoc" msprop:Generator_ColumnPropNameInRow="LotsLoc" msprop:Generator_ColumnVarNameInTable="columnLotsLoc" msprop:Generator_ColumnPropNameInTable="LotsLocColumn" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Picklist_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Picklist" />
+      <xs:field xpath="mstns:Component" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WorkOrders" />
+      <xs:field xpath="mstns:WoNbr" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

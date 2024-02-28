@@ -1,0 +1,56 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="ScannerSite.Main" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <meta name="MobileOptimized" content="300" />
+    <meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR" />
+	<meta content="C#" name="CODE_LANGUAGE" />
+	<meta content="JavaScript" name="vs_defaultClientScript" />
+	<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema" />
+	<link href="Styles.css" type="text/css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<!-- ###### header start ###### -->	
+<div id="fs-header-center"><div id="fs-header">
+    <table id="header" width="200" cellspacing="0" cellpadding="0" summary="header">
+        <tr align="center">
+            <td id="topnav1" class="topnav" width="59"><a href="LotStockMove.aspx" title="Lot Move">Lot Move</a></td>
+            <td width="1"><img src="images/separator-global-navigation-bar.gif" width="1" height="20" alt="" /></td>
+            <td id="topnav2" class="topnav" width="200"><a href="NonLotStockMove.aspx" title="Non Lot Move">Non Lot Move</a></td>
+            </tr>
+  </table>
+</div></div>
+<!-- ###### header end ###### -->	
+<!-- ###### main content start ###### -->	
+<div id="fs-body-center"><div id="fs-body">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+ </div></div>
+<!-- ###### main content end ###### -->	
+<!-- ###### footer start ###### -->	
+
+<div id="fs-footer-center"><div id="fs-footer">
+<table id="footer" width="300" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+<td style="width: 39px; font-size:12px; font-family:Arial; color: #fff; border-bottom: 1px solid #555; height: 25px">User:</td>
+<td style="width: 149px; font-size:12px; font-family:Arial; color: #fff; border-bottom: 1px solid #555; height: 25px">
+    <asp:Label ID="lblName" runat="server"></asp:Label>
+                    </td>
+<td style="width: 59px; font-size:12px; font-family:Arial; color: #fff; border-bottom: 1px solid #555; height: 25px">Account:</td>
+<td style="width: 149px; font-size:12px; font-family:Arial; color: #fff; border-bottom: 1px solid #555; height: 25px">
+    <asp:Label ID="lblAccount" runat="server"></asp:Label>
+                    </td>
+</tr>
+<tr style="font-size:10px; font-family:Arial; color: #fff">
+<td colspan="4" align="center" style="height: 25px">ContiTech Scanner Copyright © 2024 - All Rights Reserved</td>
+</tr>
+</table>
+ </div></div>
+<!-- ###### footer end ###### -->	
+</form>
+</body>
+</html>

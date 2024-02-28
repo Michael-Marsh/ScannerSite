@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<dsWorkCenters xmlns="http://tempuri.org/WorkCenters.xsd">
+  <codes code="" desc="No Work Center Selected" />
+  <codes code="41016" desc="BALER BELT AREA" />
+  <codes code="41036" desc="BALER BELT REWINDER" />
+  <codes code="41047" desc="CLICKER #1" />
+  <codes code="41048" desc="CLICKER #2" />
+  <codes code="41049" desc="CLICKER #3" />
+  <codes code="41018" desc="CONNECTOR AREA" />
+  <codes code="41888" desc="CSI/CHEMPRENE" />
+  <codes code="41007" desc="CUT DOWN F ROD/CONN" />
+  <codes code="41039" desc="CUT TO WIDTH TABLE" />
+  <codes code="41005" desc="CUTOFF MACHINE #1" />
+  <codes code="41006" desc="CUTOFF MACHINE #2" />
+  <codes code="41031" desc="EXTRUDER #1" />
+  <codes code="41032" desc="EXTRUDER #2" />
+  <codes code="41033" desc="EXTRUDER #3" />
+  <codes code="41034" desc="EXTRUDER #4" />
+  <codes code="41035" desc="EXTRUDER #5" />
+  <codes code="41025" desc="EXTRUDERS" />
+  <codes code="41037" desc="FAB CANVAS AREA" />
+  <codes code="41730" desc="GRANULATOR" />
+  <codes code="41022" desc="INSPECT-JD OEM" />
+  <codes code="41020" desc="INSPECT-JD SERVICE" />
+  <codes code="41021" desc="INSPECTION TABLE" />
+  <codes code="41013" desc="JD PUNCH PRESS" />
+  <codes code="41074" desc="LASER" />
+  <codes code="41041" desc="MD FB TEST TRACKING" />
+  <codes code="41023" desc="ONE ARM CURE PRESS" />
+  <codes code="41889" desc="OUTSIDE PROCESS" />
+  <codes code="41051" desc="PRESS 1" />
+  <codes code="41052" desc="PRESS 2" />
+  <codes code="41053" desc="PRESS 3" />
+  <codes code="41054" desc="PRESS 4" />
+  <codes code="41055" desc="PRESS 5" />
+  <codes code="41056" desc="PRESS 6" />
+  <codes code="41057" desc="PRESS 7" />
+  <codes code="41058" desc="PRESS 8" />
+  <codes code="41059" desc="PRESS 9" />
+  <codes code="41060" desc="PRESS 10" />
+  <codes code="41061" desc="PRESS 11" />
+  <codes code="41062" desc="PRESS 12" />
+  <codes code="41063" desc="PRESS 13" />
+  <codes code="41064" desc="PRESS 14" />
+  <codes code="41065" desc="PRESS 15" />
+  <codes code="41066" desc="PRESS 16" />
+  <codes code="41008" desc="PRESS FAB" />
+  <codes code="41070" desc="R AND D PRESS" />
+  <codes code="41038" desc="SEWING MACHINE" />
+  <codes code="41011" desc="SLITTER - 20K96-552" />
+  <codes code="41001" desc="SLITTER - 20K96-573" />
+  <codes code="41014" desc="SYSCO DIE CUTTER #1" />
+  <codes code="41017" desc="SYSCO DIE CUTTER #2" />
+</dsWorkCenters>
