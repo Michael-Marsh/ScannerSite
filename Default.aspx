@@ -1,8 +1,8 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ScannerSite.Default" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Login Page</title>
-    <meta name="keywords" content="ContiTech Scanner Login Page" />
-	<meta name="description" content="ContiTech Scanner Login Page" />
+<%@ Page Title="Scanner Home Page" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ScannerSite.Default" %>
+<asp:Content ID="HomeContent" ContentPlaceHolderID="head" runat="server">
+    <title>Scanner Home Page</title>
+    <meta name="keywords" content="ContiTech Scanner Home Page" />
+	<meta name="description" content="ContiTech Scanner Home Page" />
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
 	<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR" />
 	<meta content="C#" name="CODE_LANGUAGE" />
@@ -11,40 +11,82 @@
 	<link href="Styles.css" type="text/css" rel="stylesheet" />
 	<style type="text/css">
 	    TD#topnav1 A:link { BACKGROUND: #000; COLOR: #fff  }
-	  TD#topnav1 A:visited { BACKGROUND: #000; COLOR: #fff }
-	   TD#topnav2 A:link { BACKGROUND: #000; COLOR: #fff }
-	  TD#topnav2 A:visited { BACKGROUND: #000; COLOR: #fff }
+	    TD#topnav1 A:visited { BACKGROUND: #000; COLOR: #fff }
+	    TD#topnav2 A:link { BACKGROUND: #000; COLOR: #fff }
+	    TD#topnav2 A:visited { BACKGROUND: #000; COLOR: #fff }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div align="center">
-    <div style="text-align:left">&nbsp;</div>
-    <div class="heading">Handheld Scanner Login</div>
-     <table id="tbllogin" cellspacing="0" cellpadding="0" border="0" width="290" style="width: 290px; height: 136px">
-        <tr>
-            <td style="height: 7px">
-                <asp:Label ID="lblUserName" runat="server" Width="72px">Username:</asp:Label></td>
-            <td style="height: 7px">
-                <asp:TextBox ID="txtUser" TabIndex="1" runat="server" Width="176px"></asp:TextBox></td>
-        </tr>
-        <tr>
-            <td>
-                <asp:Label ID="lblPassword" runat="server" Width="72px">Password:</asp:Label></td>
-            <td>
-                <asp:TextBox ID="txtPassword" TabIndex="2" runat="server" Width="176px" TextMode="Password"></asp:TextBox></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="BtnLogin" TabIndex="3" runat="server" Text="Login" OnClick="BtnLogin_Click" Height="30px" Width="100px" Font-Size="Medium" Font-Bold="true"></asp:Button>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <asp:Label ID="lblLoginFailure" runat="server" Width="233px" Visible="false" ForeColor="Red"></asp:Label></td>
-        </tr>
-    </table>
-</div>
+<asp:Content ID="Home" ContentPlaceHolderID="PageContentHolder" runat="server">
+
+    <asp:Panel ID="ProductPanel" runat="server" DefaultButton="btnSubmit">
+
+		<table>
+            <tr>
+                <td class="heading">Product Inventory Move</td>
+                <td style="width:50px" />
+                <td>
+                    <asp:Button ID="btnQuery" runat="server" Text="Query" onclick="btnQuery_Click"/>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td><asp:Label ID="lblScanError" runat="server" ForeColor="Red"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="col1">Product ID:</td>
+                <td>
+                    <asp:TextBox ID="tbProductId" runat="server" OnTextChanged="tbProductId_TextChanged" AutoPostBack="true"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td><asp:Label ID="lblPartNumberHeader" runat="server">Part Number:</asp:Label></td>
+                <td><asp:Label ID="lblPartNumberData" runat="server"></asp:Label></td>
+            </tr>
+            <tr>
+                <td><asp:Label ID="lblLocFromHeader" runat="server">Location From:</asp:Label></td>
+                <td>
+                    <asp:Label ID="lblLocFromData" runat="server"></asp:Label>
+                    <asp:TextBox ID="tbLocFromData" runat="server" Width="75"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td><asp:Label ID="lblLocToHeader" runat="server">Location To:</asp:Label></td>
+                <td><asp:TextBox ID="tbLocToData" runat="server" Width="75"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td><asp:Label ID="lblQtyHeader" runat="server">Quantity:</asp:Label></td>
+                <td>
+                    <asp:Label ID="lblQtyData" runat="server">Quantity:</asp:Label>
+                    <asp:TextBox ID="tbQtyData" Width="50" runat="server"></asp:TextBox>
+                    <asp:Label ID="lblUomData" Width="50" runat="server"></asp:Label>
+                </td>
+            </tr>
+        </table>
+
+        <table style="height: 0px; width: 200px">
+            <tr>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width:10px"></td>
+                <td class="style3">
+                    <asp:Button ID="btnClear" runat="server" Text="Clear" Width="54px" onclick="btnClear_Click" />
+                </td>
+                <td style="width:50px">&nbsp;</td>
+                <td class="style3">
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" onclick="btnSubmit_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td id="acceptMsg" runat="server" colspan="4"/>
+            </tr>
+        </table>
+
+    </asp:Panel>
+
 </asp:Content>

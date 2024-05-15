@@ -12,7 +12,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ScannerSite</RootNamespace>
     <AssemblyName>ScannerSite</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -36,6 +36,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <LegacyPublishPropertiesPageEnabled>true</LegacyPublishPropertiesPageEnabled>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <IncludeIisSettings>true</IncludeIisSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -56,6 +60,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Drawing" />
@@ -69,25 +74,18 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Login.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="NonLotStockMove.aspx" />
     <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NonLotStockMove.aspx.cs">
-      <DependentUpon>NonLotStockMove.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="NonLotStockMove.aspx.designer.cs">
-      <DependentUpon>NonLotStockMove.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LotStockMove.aspx.cs">
-      <DependentUpon>LotStockMove.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LotStockMove.aspx.designer.cs">
-      <DependentUpon>LotStockMove.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -114,7 +112,6 @@
     <Content Include="js\js_prod_changer.js" />
     <Content Include="js\rollover_script.js" />
     <Content Include="js\visibility.js" />
-    <Content Include="LotStockMove.aspx" />
     <Content Include="images\separator-global-navigation-bar.gif" />
     <Content Include="images\tile-texture.jpg" />
     <Content Include="Main.Master" />
