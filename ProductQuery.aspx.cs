@@ -8,7 +8,7 @@ using System.Web.UI;
 
 namespace ScannerSite
 {
-    public partial class Default : Page
+    public partial class ProductQuery : Page
     {
         /// <summary>
         /// Page Constructor
