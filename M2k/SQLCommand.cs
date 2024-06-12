@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace M2kClient
@@ -303,6 +304,48 @@ namespace M2kClient
                 {
                     _result.Add(false, "No connection.");
                     return _result;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Get a products lot information
+        /// </summary>
+        /// <param name="productId">Product ID</param>
+        /// <param name="productType">Product Type</param>
+        /// <returns>populated datatable of lot information</returns>
+        public static DataTable GetProductTable(string productId, string productType)
+        {
+            var _result = new Dictionary<bool, string>();
+            var _cmdString = productType == "Lot"
+                ? "SELECT [LotID] as 'Lot Number', CONCAT([OnHand], ' ', [Uom]) as 'On Hand', [Location] FROM [dbo].[SFW_Lot] WHERE [Sku] = @p1 AND [Type] = @p2"
+                : "SELECT CONCAT([OnHand], ' ', [Uom]) as 'On Hand', [Location] FROM [dbo].[SFW_Lot] WHERE [Sku] = @p1 AND [Type] = @p2";
+            using (var sqlCon = Config.GetSqlConnection())
+            {
+                if (sqlCon != null)
+                {
+                    sqlCon.Open();
+                    using (var returnTable = new DataTable())
+                    {
+                        try
+                        {
+                            using (SqlDataAdapter adapter = new SqlDataAdapter(_cmdString, sqlCon))
+                            {
+                                adapter.SelectCommand.Parameters.AddWithValue("p1", productId);
+                                adapter.SelectCommand.Parameters.AddWithValue("p2", productType);
+                                adapter.Fill(returnTable);
+                                return returnTable;
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            return null;
+                        }
+                    }
+                }
+                else
+                {
+                    return null;
                 }
             }
         }

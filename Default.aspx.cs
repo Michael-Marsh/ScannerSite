@@ -26,6 +26,12 @@ namespace ScannerSite
                 ((Main)Master).lblName.Text = SQLCommand.GetUserName(HttpContext.Current.User.Identity.Name);
                 ((Main)Master).lblSite.Text = "Wahpeton (01)";
                 ResetScreenFull();
+                var _productId = Request.QueryString["ProductId"]?.ToString();
+                var _productType = Request.QueryString["ProductType"]?.ToString();
+                if (!string.IsNullOrEmpty(_productId) || !string.IsNullOrEmpty(_productType))
+                {
+                    ProductPageLoad(_productId, _productType);
+                }
             }
         }
 
@@ -206,6 +212,11 @@ namespace ScannerSite
 
         #region Page Interaction Event Code
 
+        /// <summary>
+        /// Text changed event for the product ID field
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void tbProductId_TextChanged(object sender, EventArgs e)
         {
             ResetScreenBase();
@@ -233,6 +244,11 @@ namespace ScannerSite
             }
         }
 
+        /// <summary>
+        /// Submission event for the default window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             var _validationResult = ValidateUserInput();
@@ -309,11 +325,24 @@ namespace ScannerSite
             }
         }
 
+
+        /// <summary>
+        /// Product query event for looking at product details
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnQuery_Click(object sender, EventArgs e)
         {
-
+            var _type = tbQtyData.Visible ? "nLot" : "Lot";
+            var _productId = tbQtyData.Visible ? tbProductId.Text : lblPartNumberData.Text;
+            Response.Redirect($"~/ProductQuery.aspx?RequestProduct={tbProductId.Text}&ProductId={_productId}&ProductType={_type}");
         }
 
+        /// <summary>
+        /// Clear screen execution
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnClear_Click(object sender, EventArgs e)
         {
             ResetScreenFull();

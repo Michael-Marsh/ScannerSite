@@ -1,4 +1,4 @@
-<%@ Page Title="Scanner Home Page" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="ProductQuery.aspx.cs" Inherits="ScannerSite.Default" %>
+<%@ Page Title="Scanner Home Page" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="ProductQuery.aspx.cs" Inherits="ScannerSite.ProductQuery" %>
 <asp:Content ID="HomeContent" ContentPlaceHolderID="head" runat="server">
     <title>Scanner Home Page</title>
     <meta name="keywords" content="ContiTech Scanner Home Page" />
@@ -17,11 +17,18 @@
     </style>
 </asp:Content>
 <asp:Content ID="Home" ContentPlaceHolderID="PageContentHolder" runat="server">
-
-    <asp:Panel ID="ProductPanel" runat="server" DefaultButton="btnSubmit">
-
-		
-
-    </asp:Panel>
+	<table>
+		<tr>
+			<td>
+				<asp:Label ID="lblPartNumberHeader" runat="server">Part Number:</asp:Label>
+				<asp:Label ID="lblPartNumberData" runat="server"></asp:Label>
+			</td>
+			<td style="width:50px">&nbsp;</td>
+			<td><asp:Button ID="Button1" runat="server" Text="Back" onclick="btnBack_Click"/></td>
+		</tr>
+		<tr>
+			<td colspan="3"><asp:GridView ID="gvProduct" runat="server" /></td>
+		</tr>
+	</table>
 
 </asp:Content>
