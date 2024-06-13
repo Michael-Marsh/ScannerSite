@@ -1,4 +1,4 @@
-<%@ Page Title="LoginPage" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ScannerSite.Login" %>
+<%@ Page Title="Scanner Sign In" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ScannerSite.Login" %>
 <asp:Content ID="LoginHeader" ContentPlaceHolderID="head" runat="server">
     <title>Login Page</title>
     <meta name="keywords" content="ContiTech Scanner Login Page" />

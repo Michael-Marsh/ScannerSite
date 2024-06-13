@@ -10,6 +10,10 @@ namespace ScannerSite
 {
     public partial class Default : Page
     {
+        public static string ProductId { get; set; }
+        public static string ProductNumber { get; set; }
+        public static string ProductType { get; set; }
+
         /// <summary>
         /// Page Constructor
         /// </summary>
@@ -26,11 +30,11 @@ namespace ScannerSite
                 ((Main)Master).lblName.Text = SQLCommand.GetUserName(HttpContext.Current.User.Identity.Name);
                 ((Main)Master).lblSite.Text = "Wahpeton (01)";
                 ResetScreenFull();
-                var _productId = Request.QueryString["ProductId"]?.ToString();
-                var _productType = Request.QueryString["ProductType"]?.ToString();
-                if (!string.IsNullOrEmpty(_productId) || !string.IsNullOrEmpty(_productType))
+                if (!string.IsNullOrEmpty(ProductQuery.ReturnId))
                 {
-                    ProductPageLoad(_productId, _productType);
+                    ProductPageLoad(ProductQuery.ReturnId, ProductQuery.ReturnType);
+                    ProductQuery.ReturnId = null;
+                    ProductQuery.ReturnType = null;
                 }
             }
         }
@@ -54,6 +58,9 @@ namespace ScannerSite
             lblUomData.Text = "";
             btnQuery.Visible = false;
             btnSubmit.Visible = false;
+            ProductType = null;
+            ProductNumber = null;
+            ProductId = null;
         }
 
         /// <summary>
@@ -76,6 +83,9 @@ namespace ScannerSite
             lblUomData.Text = "";
             btnQuery.Visible = false;
             btnSubmit.Visible = false;
+            ProductType = null;
+            ProductNumber = null;
+            ProductId = null;
             tbProductId.Focus();
         }
 
@@ -102,6 +112,9 @@ namespace ScannerSite
                     lblUomData.Text = SQLCommand.GetUom(productId);
                     btnQuery.Visible = true;
                     btnSubmit.Visible = true;
+                    ProductType = productType;
+                    ProductId = productId;
+                    ProductNumber = productId;
                     tbLocFromData.Focus();
                     break;
                 case "LN":
@@ -120,6 +133,9 @@ namespace ScannerSite
                         lblUomData.Text = _productData[3];
                         btnQuery.Visible = true;
                         btnSubmit.Visible = true;
+                        ProductType = productType;
+                        ProductId = productId;
+                        ProductNumber = _productData[0];
                         tbLocToData.Focus();
                     }
                     else if (_productData.Count == 1)
@@ -333,9 +349,10 @@ namespace ScannerSite
         /// <param name="e"></param>
         protected void btnQuery_Click(object sender, EventArgs e)
         {
-            var _type = tbQtyData.Visible ? "nLot" : "Lot";
-            var _productId = tbQtyData.Visible ? tbProductId.Text : lblPartNumberData.Text;
-            Response.Redirect($"~/ProductQuery.aspx?RequestProduct={tbProductId.Text}&ProductId={_productId}&ProductType={_type}");
+            ProductId = tbProductId.Text;
+            ProductNumber = tbQtyData.Visible ? ProductId : lblPartNumberData.Text;
+            ProductType = tbQtyData.Visible ? "nLot" : "Lot";
+            Response.Redirect($"~/ProductQuery.aspx");
         }
 
         /// <summary>

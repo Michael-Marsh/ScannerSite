@@ -9,8 +9,8 @@ namespace ScannerSite
 {
     public partial class ProductQuery : Page
     {
-        public string ProductId { get; set; }
-        public string ProductType { get; set; }
+        public static string ReturnId { get; set; }
+        public static string ReturnType { get; set; }
 
         /// <summary>
         /// Page Constructor
@@ -28,28 +28,34 @@ namespace ScannerSite
                 ((Main)Master).lblName.Text = SQLCommand.GetUserName(HttpContext.Current.User.Identity.Name);
                 ((Main)Master).lblSite.Text = "Wahpeton (01)";
             }
-            ProductId = Request.QueryString["RequestProduct"];
-            ProductType = Request.QueryString["ProductType"] == "Lot" ? "LN" : "PN";
-            var _productId = Request.QueryString["ProductId"];
-            lblPartNumberData.Text = _productId;
-            var _productType = Request.QueryString["ProductType"];
-            using (DataTable _dt = SQLCommand.GetProductTable(_productId, _productType))
+            if (!string.IsNullOrEmpty(Default.ProductNumber))
             {
-                if(_dt == null || _dt.Rows.Count == 0)
+                lblPartNumberData.Text = Default.ProductNumber;
+                lblReturnId.Text = Default.ProductId;
+                lblReturnType.Text = Default.ProductType;
+                Default.ProductId = null;
+                Default.ProductNumber = null;
+                Default.ProductType = null;
+                using (DataTable _dt = SQLCommand.GetProductTable(lblPartNumberData.Text, lblReturnType.Text))
                 {
-                    //TODO: add in error handling
-                }
-                else
-                {
-                    gvProduct.DataSource = _dt;
-                    gvProduct.DataBind();
+                    if (_dt == null || _dt.Rows.Count == 0)
+                    {
+                        //TODO: add in error handling
+                    }
+                    else
+                    {
+                        gvProduct.DataSource = _dt;
+                        gvProduct.DataBind();
+                    }
                 }
             }
         }
 
         protected void btnBack_Click(object sender, EventArgs e)
         {
-            Response.Redirect($"~/Default.aspx?ProductId={ProductId}&ProductType={ProductType}");
+            ReturnId = lblReturnId.Text;
+            ReturnType = lblReturnType.Text == "Lot" ? "LN" : "PN";
+            Response.Redirect($"~/Default.aspx");
         }
     }
 }
